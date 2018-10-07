@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{{-- layouts/profile.blade.phpを読み込む --}}
+@extends('layouts.profile’)
+
 <html>
    <head>
       <meta charset="utf-8">
@@ -6,9 +9,9 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-      <title>My News Part2</title>
+      <title>MyProfile</title>
   </head>
   <body>
-    <h1>Myニュース作成画面　Part２</h1>
+    <h1>Myプロフィール</h1>
   </body>
 </html>
