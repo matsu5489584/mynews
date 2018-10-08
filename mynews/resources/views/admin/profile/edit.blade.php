@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 {{-- layouts/profile.blade.phpを読み込む --}}
-@extends('layouts.profile’)
+@extends('layouts.profile')
+
+@section('title', 'ニュースの新規作成')
 
 <html>
    <head>
@@ -9,9 +11,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-      <title>MyProfile</title>
-  </head>
-  <body>
-    <h1>Myプロフィール</h1>
-  </body>
-</html>
+
+@section('content')
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <h2>Myプロフィール</h2>
+    </div>
+  </div>
+</div>
+@endsection
