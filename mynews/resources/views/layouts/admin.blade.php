@@ -23,7 +23,6 @@
         <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 
         <!-- Scripts -->
-        {{-- Laravel標準で用意されているJavascriptを読み込みます -->
         <script src="{{ asset('js/app.js') }}" defer></script>
 
     </head>
