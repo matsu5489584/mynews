@@ -7,9 +7,14 @@ use App\Http\Controllers\Controller;
 
 class NewsController extends Controller
 {
+  public function add()
+  {
+    return view ('admin.news.create');
+  }
     //以下を追記
-    public function add()
+    public function create(Request $request)
     {
-      return view('admin.news.create');
+      // admin/news/createにリダイレクトする
+      return redirect('admin/news/create');
     }
 }
