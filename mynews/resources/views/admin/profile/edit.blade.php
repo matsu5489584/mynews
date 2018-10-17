@@ -4,13 +4,6 @@
 
 @section('title', 'ニュースの新規作成')
 
-<html>
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-
-
 
 @section('content')
 <div class="container">
@@ -45,11 +38,11 @@
                               </div>
                           </div>
                           <div class="form-group row">
-                              <label class="col-md-2" for="introdaction">自己紹介（introdaction）</label>
+                              <label class="col-md-2" for="introduction">自己紹介（introdaction）</label>
                               <div class="col-md-10">
                                   <textarea class="form-control" name="introdaction" rows="20">{{ old('introdaction') }}</textarea>
                               </div>
-                          </div>                      
+                          </div>
                           {{ csrf_field() }}
                           <input type="submit" class="btn btn-primary" value="更新">
 
