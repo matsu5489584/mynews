@@ -21,6 +21,12 @@ Route::group(['prefix' => 'admin'], function() {
  Route::get('news/create', 'Admin\NewsController@add')->middleware('auth');
  Route::post('news/create', 'Admin\NewsController@create')->middleware('auth');
  Route::get('news', 'Admin\NewsController@index')->middleware('auth'); // 追記
+    Route::get('news/create', 'Admin\NewsController@add');
+    Route::post('news/create', 'Admin\NewsController@create');
+    Route::get('news', 'Admin\NewsController@index');
+    Route::get('news/edit', 'Admin\NewsController@edit'); // 追記
+    Route::post('news/edit', 'Admin\NewsController@update'); // 追記
+
 });
 
 Auth::routes();
