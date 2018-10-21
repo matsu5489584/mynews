@@ -22,6 +22,11 @@ class ProfileController extends Controller
     $news = new Profile;
     $form = $request->all();
 
+    // データベースに保存する
+     $news->fill($form);
+     $news->save();
+
+
     return redirect('admin/profile/edit');
   }
 }
