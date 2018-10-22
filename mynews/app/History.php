@@ -8,7 +8,7 @@ class History extends Model
 {
      protected $guarded = array('id');
 
-     pubric static $rules = array(
+     public static $rules = array(
        'news_id' => 'required',
        'edited_at' => 'required',
     );
