@@ -21,7 +21,8 @@ class ProfileController extends Controller
 
     $news = new Profile;
     $form = $request->all();
-
+    unset($form['_token']);
+    
     // データベースに保存する
      $news->fill($form);
      $news->save();
