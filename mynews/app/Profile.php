@@ -17,4 +17,11 @@ class Profile extends Model
       'introduction' => 'required',
 
   );
+
+    // 以下を追記
+    public function histories()
+    {
+      return $this->hasMany('App\History');
+
+    }
 }
