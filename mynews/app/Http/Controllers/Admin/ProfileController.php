@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Profile;
 
-use App\PlofileHistory;
+use App\ProfileHistory;
 
 use Carbon\Carbon;
 
