@@ -15,7 +15,8 @@ class ProfileController extends Controller
   //以下を追記
   public function edit(Request $request)
   {
-    return view('admin.profile.edit');
+    $profile = new Profile;
+    return view('admin.profile.edit', ['form' => $profile]);
   }
   public function update(Request $request)
   {
