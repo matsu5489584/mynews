@@ -10,6 +10,12 @@ use App\News;
 
 class NewsController extends Controller
 {
+  //プロフィールアクションを作成しnews/profile.blade.phpというViewテンプレートにプロフィール情報を渡す
+  public function profile()
+{
+return view(news/profile/blade);
+}
+
   public function index(Request $request)
   {
       $cond_title = $request->cond_title;
