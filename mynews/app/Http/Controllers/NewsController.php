@@ -13,7 +13,7 @@ class NewsController extends Controller
   //プロフィールアクションを作成しnews/profile.blade.phpというViewテンプレートにプロフィール情報を渡す
   public function profile()
 {
-return view(news/profile/blade);
+  return view('news.profile');
 }
 
   public function index(Request $request)
