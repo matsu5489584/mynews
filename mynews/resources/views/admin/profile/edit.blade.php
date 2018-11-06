@@ -28,8 +28,8 @@
         <div class="form-group row">
           <label class="col-md-2" for="gender">性別（gender）</label>
           <div class="col-md-10">
-            <input type="radio" name="gender" value="male">男性
-            <input type="radio" name="gender" value="female">女性
+            <input type="radio" name="gender" value="男">男性
+            <input type="radio" name="gender" value="女">女性
           </div>
         </div>
         <div class="form-group row">

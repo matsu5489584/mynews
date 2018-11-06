@@ -11,13 +11,13 @@ use App\Profile;
 class NewsController extends Controller
 {
   //プロフィールアクションを作成しnews/profile.blade.phpというViewテンプレートにプロフィール情報を渡す
-  public function profile();
+  public function profile()
 {
   $profile = Profile::all()->sortByDesc('updated_at')->first();
   return view('news.profile', ['profile' => $profile]);
-}}
+}
 
-  public function index(Request $request);
+  public function index(Request $request)
   {
       $cond_title = $request->cond_title;
       // $cond_title が空白でない場合は、記事を検索して取得する
@@ -36,4 +36,4 @@ class NewsController extends Controller
                 // news/index.blade.php ファイルを渡している
       // また View テンプレートに headline、 posts、 cond_title という変数を渡している
       return view('news.index', ['headline' => $headline, 'posts' => $posts, 'cond_title' => $cond_title]);
-  }
+  }}
