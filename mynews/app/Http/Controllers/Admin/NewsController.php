@@ -3,11 +3,9 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-// 以下を追記することでNews Modelが扱えるようになる
 use App\News;
-// 以下を追記
 use App\History;
-
+use App\Profile;
 use Carbon\Carbon;
 
 class NewsController extends Controller
